@@ -6,6 +6,11 @@ app.get('/', (req, res) => {
     res.send("Updated");
 });
 
+app.get('/api/users', (req,res) => {
+    res.send("users");
+
+});
+
 const port = process.env.port || 3000;
 app.listen(port, () => {
     console.log("Started");
